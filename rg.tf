@@ -7,11 +7,9 @@ terraform {
   }
 }
 
-provider "random" {
-  # Configuration options
-}
 
-resource "random_pet" "rg_name" {
+resource "random_id" "rg_name" {
+  byte_length = 8
   prefix = var.prefix
 }
 
