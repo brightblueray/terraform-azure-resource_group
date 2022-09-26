@@ -16,7 +16,7 @@ resource "random_pet" "rg_name" {
 }
 
 resource "azurerm_resource_group" "rg" {
-  name     = "${random_pet.rg_name}-rg"
+  name     = "${random_pet.rg_name.id}-rg"
   location = var.location
 }
 
