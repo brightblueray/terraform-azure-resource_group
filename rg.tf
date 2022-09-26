@@ -1,15 +1,15 @@
-terraform {
-  required_providers {
-    random = {
-      source = "hashicorp/random"
-      version = "3.4.3"
-    }
-  }
-}
+# terraform {
+#   required_providers {
+#     random = {
+#       source = "hashicorp/random"
+#       version = "3.4.3"
+#     }
+#   }
+# }
 
-provider "random" {
-  # Configuration options
-}
+# provider "random" {
+#   # Configuration options
+# }
 
 resource "random_id" "rg_name" {
   byte_length = 8
